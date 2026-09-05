@@ -1,0 +1,46 @@
+text,smiles,label
+anti inflammatory,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0
+toxic compound,CN1CCC[C@H]1c2cccnc2,1
+simple alcohol,CCO,0
+non drug hydrocarbon,CCCC,0
+painkiller drug aspirin,CC(=O)OC1=CC=CC=C1C(=O)O,0
+benzene solvent carcinogen,C1=CC=CC=C1,1
+ethanol drinking alcohol fuel,CCO,0
+methane gas natural gas,C,0
+chloroform toxic solvent,ClC(Cl)Cl,1
+formaldehyde toxic preservative,C=O,1
+acetic acid vinegar acid,CC(=O)O,0
+aspirin acetylsalicylic acid pain reliever,CC(=O)OC1=CC=CC=C1C(=O)O,0
+ibuprofen nsaid pain reliever,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,0
+nicotine toxic alkaloid stimulant,CN1CCC[C@H]1c2cccnc2,1
+caffeine central nervous system stimulant,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,0
+ammonia toxic industrial gas,N,1
+carbon dioxide greenhouse gas,O=C=O,0
+sodium cyanide lethal poison,C#N,1
+phenol toxic disinfectant,C1=CC=C(C=C1)O,1
+propane fuel gas,CCC,0
+butanol industrial alcohol,CCCCO,0
+hydrogen peroxide oxidant antiseptic,OO,1
+sulfuric acid corrosive mineral acid,OS(=O)(=O)O,1
+glucose essential blood sugar carbohydrate,C(C1C(C(C(C(O1)O)O)O)O)O,0
+paracetamol acetaminophen analgesic pain reliever,CC(=O)NC1=CC=C(O)C=C1,0
+water solvent of life,O,0
+sodium chloride table salt,[Na+].[Cl-],0
+methanol toxic wood alcohol blindness risk,CO,1
+hydrogen cyanide toxic gas,C#N,1
+dopamine neurotransmitter reward chemical,C1=CC(=C(C=C1CCN)O)O,0
+serotonin neurotransmitter mood regulation,C1=CC2=C(C=C1O)C(=CN2)CCN,0
+penicillin g beta lactam antibiotic,CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C,0
+tnt trinitrotoluene explosive compound,CC1=C(C=C(C=C1[N+](=O)[O-])[N+](=O)[O-])[N+](=O)[O-],1
+acetone common organic solvent nail polish remover,CC(=O)C,0
+toluene industrial solvent,CC1=CC=CC=C1,1
+morphine opioid analgesic pain medication,CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O,1
+metformin first line diabetes medication,CN(C)C(=N)NC(=N)N,0
+atorvastatin lipitor cholesterol lowering statin,CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4,0
+amoxicillin broad spectrum penicillin antibiotic,CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C,0
+diazepam valium sedative benzodiazepine,CC1=NC2=C(C=C1O)C(=CN2)CCN,0
+salicylic acid topical acne medication precursor to aspirin,C1=CC=C(C(=C1)C(=O)O)O,0
+citric acid natural citrus acid antioxidant,C(C(=O)O)C(CC(=O)O)(C(=O)O)O,0
+ascorbic acid vitamin c essential nutrient,C(C(C1C(=C(C(=O)O1)O)O)O)O,0
+capsaicin spicy component of chili peppers,CC(C)/C=C/CCCCCC(=O)NCC1=CC(=C(C=C1)O)OC,0
+nitroglycerin explosive vasodilator medication,C(C(CO[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-],1

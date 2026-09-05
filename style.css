@@ -1,0 +1,245 @@
+:root {
+    --bg-dark: #0e1b42;
+    --accent-teal: #00D2FF;
+    --accent-green: #39FF14;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-primary: #e4e1e1;
+    --text-secondary: #A0A0A0;
+}
+
+/* Base Styles */
+.stApp {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.05) 0%, transparent 80%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='93' viewBox='0 0 80 93'%3E%3Cpath d='M40 0l40 23.09v46.18L40 92.36 0 69.27V23.09L40 0z' fill='none' stroke='%23ffffff' stroke-opacity='0.03' stroke-width='1'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+/* Header */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    background: linear-gradient(90deg, var(--accent-teal), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin: 2rem 0;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.large-tagline {
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: white;
+    opacity: 0.9;
+}
+
+/* Input Gateway */
+.gateway-container {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    /* Reduced top/bottom padding */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.stTextInput>div>div>input {
+    background-color: white !important;
+    color: #1A1A1A !important;
+    border: 2px solid var(--accent-teal) !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1.2rem !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease;
+}
+
+.stTextInput>div>div>input:focus {
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3) !important;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-teal);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-teal);
+}
+
+.feature-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.feature-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+.custom-footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 5rem;
+}
+
+/* Buttons */
+/* Targeting Streamlit buttons more robustly */
+[data-testid="stBaseButton-primary"] {
+    background: linear-gradient(90deg, var(--accent-teal), #00A8FF) !important;
+    color: white !important;
+    border: none !important;
+}
+
+[data-testid="stBaseButton-primary"]:hover {
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.4) !important;
+    transform: scale(1.02) !important;
+}
+
+[data-testid="stBaseButton-secondary"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--accent-teal) !important;
+    border: 1px solid var(--accent-teal) !important;
+}
+
+[data-testid="stBaseButton-secondary"]:hover {
+    background: rgba(0, 210, 255, 0.1) !important;
+}
+
+/* Animations */
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+
+
+/* Lab Scanning Animation */
+.scanning-container {
+    position: relative;
+    height: 10px;
+    background: rgba(0, 210, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.scanning-bar {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, var(--accent-teal), transparent);
+    animation: scan 2s infinite linear;
+}
+
+@keyframes scan {
+    0% { left: -30%; }
+    100% { left: 100%; }
+}
+
+.scanning-text {
+    font-size: 0.8rem;
+    color: var(--accent-teal);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Prediction & Property Cards */
+
+.result-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 15px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.25),
+        0 0 15px rgba(0,210,255,0.05);
+
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0,210,255,0.4);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.35),
+        0 0 20px rgba(0,210,255,0.12);
+}
+
+.result-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.result-value {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.result-unit {
+    color: var(--accent-teal);
+    font-size: 0.85rem;
+    margin-left: 5px;
+}
