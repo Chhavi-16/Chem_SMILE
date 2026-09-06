@@ -5,5 +5,4 @@ torch
 transformers
 rdkit
 numpy
-pandas
 requests
