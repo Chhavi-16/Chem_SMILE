@@ -6,3 +6,12 @@ transformers
 rdkit
 numpy
 requests
+streamlit
+py3Dmol
+scikit-learn
+pandas
+numpy
+rdkit
+torch
+transformers
+tokenizers
