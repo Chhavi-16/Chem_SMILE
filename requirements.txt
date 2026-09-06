@@ -10,8 +10,5 @@ streamlit
 py3Dmol
 scikit-learn
 pandas
-numpy
-rdkit
-torch
-transformers
+sentence-transformers
 tokenizers
